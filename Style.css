@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #8ad5e7;
+}
+
+header {
+    background: #006400;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#presentacio {
+    background: url('images/rapinyaires.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column; /* Col·loca els elements verticalment */
+    align-items: center; /* Centra els elements horitzontalment */
+}
+
+.mapa-provincial {
+    max-width: 600px; /* Triple de 200px */
+    height: auto; /* Manté la proporció */
+    margin-top: 20px; /* Afegir espai entre el botó i el mapa */
+}
+
+#presentacio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Separació del text */
+}
+
+#presentacio p {
+    margin-bottom: 20px; /* Separació entre el paràgraf i el botó */
+}
+
+#presentacio button {
+    background: #228B22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px; /* Afegir espai entre el botó i altres elements */
+}
+
+#presentacio button:hover {
+    background: #006400;
+}
+
+
+#contingut {
+    padding: 20px;
+    background: #fff;
+}
+
+.especie-imatge {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+
+.subseccions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subseccions article {
+    flex: 1;
+    min-width: 250px;
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #c1ffc1;
+}
+
+.subseccions article h3 {
+    margin-top: 0;
+    background-color: #c1ffc1;
+}
+
+#galeria {
+    padding: 20px;
+    text-align: center;
+}
+
+#galeria .imatges {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* Assegura que les imatges es disposin en múltiples línies si cal */
+}
+
+#galeria .imatges img {
+    max-width: 500px; /* Permet que cada imatge arribi fins a 500 píxels d'amplada */
+    width: 100%; /* Escala segons la mida del contenidor per ser responsiu */
+    height: auto; /* Manté la proporció de la imatge */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Afegim l'animació aquí per coherència */
+}
+
+#galeria .imatges img:hover {
+    transform: scale(1.1); /* Augmenta la mida de la imatge al passar el cursor */
+}
+
+.links-gif-container {
+    display: flex;
+    align-items: flex-start; /* Alinea els elements al començament verticalment */
+    justify-content: flex-start; /* Alinea els elements horitzontalment */
+    gap: 20px; /* Espai entre enllaços i GIF */
+    flex-wrap: wrap; /* Si no hi ha prou espai, els elements salten a la següent línia */
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.animated-gif {
+    width: 150px;
+    height: auto;
+    margin-left: 20px; /* Espai entre els enllaços i el GIF */
+}
+
+
+#enllacos {
+    background: #006400;
+    padding: 20px;
+    color: #fff;
+}
+
+#enllacos ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#enllacos ul li {
+    margin: 10px 0;
+}
+
+#enllacos ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#enllacos ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocells de Presa</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Rapinyaires de Catalunya</div>
+        <nav>
+            <ul>
+                <li><a href="#presentacio">Presentació</a></li>
+                <li><a href="#contingut">Espècies</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#enllacos">Enllaços d’interès</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentacio">
+            <h1>Descobreix les Aus Rapinyaires catalanes</h1>
+            <p>Descobreix les fascinants aus rapinyaires que habiten a Catalunya: predadors majestuosos que vetllen per l’equilibri natural.</p>
+            <button onclick="window.location.href='#contingut'">Explora les espècies</button>
+            <img src="Imatges\Mapa_provincial_de_Catalunya.svg.png" alt="mapa Catalunya"  class="mapa-provincial">
+        </section>
+
+        <section id="contingut" style="background-color: #8ad5e7;">
+            <h2>Espècies</h2>
+            <div class="subseccions">
+                <article id="falconiformes">
+                    <h3>Falconiformes</h3>
+                    <p>Els falconiformes inclouen espècies com àligues, milans, arpelles i falcons. Són grans depredadors diürns amb una visió aguda.</p>
+                    <button onclick="toggleInfo('falconiformesInfo', this)">Veure més</button>
+                    <div id="falconiformesInfo" style="display: none;">
+                        <ul>
+                            <li><strong>Àligues:</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Àliga daurada (Aquila chrysaetos)</h4>
+                                        <p>Una gran àliga de grans dimensions, amb un cap característic daurat. Habita a muntanyes i zones rocoses, caçant animals com conills i cèrvols joves.</p>
+                                        <img src="Imatges\Àliga daurada (Aquila chrysaetos).jpg" alt="Àliga daurada" class="especie-imatge">
+                                        <img src="Imatges\AligaDauradaVol.jpg" alt="Àliga daurada Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Àliga cuabarrada (Aquila fasciata)</h4>
+                                        <p>Similar a l’àliga daurada però de mida més petita, es troba en zones obertes i muntanyoses. Caça ocells i mamífers petits.</p>
+                                        <img src="Imatges\Àliga cuabarrada (Aquila fasciata).jpg" alt="Àliga daurada" class="especie-imatge"5>
+                                        <img src="Imatges\ÀligaCuabarradaVol.jpg" alt="Àliga cuabarrada Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Àliga marcenca (Circaetus gallicus)</h4>
+                                        <p>Aquesta àliga es especialitza a caçar serps, i es pot trobar en zones semiàrides.</p>
+                                        <img src="Imatges\Àliga marcenca (Circaetus gallicus).jpg" alt="Àliga marcenca" class="especie-imatge">
+                                        <img src="Imatges\ÀligaMarcencaVol.jpg" alt="Àliga marcenca Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Milans:</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Milà reial (Milvus milvus)</h4>
+                                        <p>Un milà amb un llarg i forkat bec, famós per les seves habilitats per planificar i buscar cadàvers o carnisseria. Té una gran presència a Catalunya.
+                                        </p>
+                                        <img src="Imatges\Milà reial (Milvus milvus).jpg" alt="Milà reial" class="especie-imatge">
+                                        <img src="Imatges\MilàReialVol.jpg" alt="Milà reial Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Milà negre (Milvus migrans)</h4>
+                                        <p>Similar al milà reial, però amb el bec més curt i el cos més esvelt. Sovint es troba en àrees més properes a rius i llacs.</p>
+                                        <img src="Imatges\Milà negre (Milvus migrans).jpg" alt="Milà negre" class="especie-imatge">
+                                        <img src="Imatges\MilàNegreVol.jpg" alt="Milà negre Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Arpelles:</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Arpella vulgar (Circus aeruginosus)</h4>
+                                        <p>Aquesta rapinyaire es caracteritza per la seva capacitat per volar baix sobre aiguamolls i terres humides, caçant petits mamífers i ocells.</p>
+                                        <img src="Imatges\Arpella vulgar (Circus aeruginosus).jpg" alt="Arpella vulgar" class="especie-imatge">
+                                        <img src="Imatges\ArpellaVulgarVol.jpg" alt="Arpella vulgar Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Arpella cendrosa (Circus pygargus)</h4>
+                                        <p>Similar a l'arpella vulgar, però amb una mida més petita i una coloració més clara. Són comuns en camps oberts.</p>
+                                        <img src="Imatges\Arpella cendrosa (Circus pygargus).jpg" alt="Arpella cendrosa" class="especie-imatge">
+                                        <img src="Imatges\ArpellaCendrosaVol.jpg" alt="Arpella cendrosa Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Esparver d'espatlles negres (Elanus caeruleus)</h4>
+                                        <p>Un esparver que viu a zones obertes i s’alimenta principalment de petits mamífers.</p>
+                                        <img src="Imatges\Esparver d'espatlles negres (Elanus caeruleus).jpg" alt="Esparver d'espatlles negres" class="especie-imatge">
+                                        <img src="Imatges\Esparver d'espatlles negresVol.jpg" alt="Esparver d'espatlles negres Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Astors i esparvers:</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Astor comú (Accipiter gentilis)</h4>
+                                        <p>Un rapinyaire forestal, amb una capacitat excepcional per volar entre arbres i caçar ocells i mamífers petits.</p>
+                                        <img src="Imatges\Astor comú (Accipiter gentilis).jpg" alt="Astor comú" class="especie-imatge">
+                                        <img src="Imatges\AstorComúVol.jpg" alt="Astor comú Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Esparver comú (Accipiter nisus)</h4>
+                                        <p>Una espècie petita que caça petits ocells, especialment en zones boscoses o parcs.</p>
+                                        <img src="Imatges\Esparver comú (Accipiter nisus).jpg" alt="Esparver comú" class="especie-imatge">
+                                        <img src="Imatges\EsparverComúVol.jpg" alt="Esparver comú Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Aligots:</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Aligot comú (Buteo buteo)</h4>
+                                        <p>És una espècie molt comuna en els boscos i prats d'Europa, conegut per la seva capacitat de volar de manera lenta i estable. S'alimenta principalment de petits mamífers i ocells. El seu vol característic és ample i lent, amb les ales estirades.</p>
+                                        <img src="Imatges\Aligot comú (Buteo buteo).jpg" alt="Aligot comú" class="especie-imatge">
+                                        <img src="Imatges\AligotComúVol.jpg" alt="Aligot comú Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Aligot vesper (Pernis apivorus)</h4>
+                                        <p>Es tracta d'un rapinyaire de mida mitjana que habita zones obertes com prats i boscos. El seu nom fa referència a la seva dieta especialitzada en abelles i altres insectes voladors. El seu vol és planer i pot arribar a grans altures per caçar.</p>
+                                        <img src="Imatges\Aligot vesper (Pernis apivorus).jpg" alt="Aligot vesper" class="especie-imatge">
+                                        <img src="Imatges\AligotVesperVol.jpg" alt="Aligot vesper" class="especie-imatge">
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li><strong>Família: Pandionidae</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Àguila pescadora (Pandion haliaetus)</h4>
+                                        <p>Especialitzada en la caça de peixos, aquesta àguila es caracteritza per la seva gran visió i habilitat per caçar des del cel en zones aquàtiques.</p>
+                                        <img src="Imatges\Àguila pescadora (Pandion haliaetus).jpg" alt="Àguila pescadora" class="especie-imatge">
+                                        <img src="Imatges\ÀguilaPescadoraVol.jpg" alt="Àguila pescadora Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Família: Falconidae</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Falcó pelegrí (Falco peregrinus)</h4>
+                                        <p>Famosa per ser l'animal més ràpid del món, aquest falcó caça altres ocells en vol mitjançant rapidesa i precisió.</p>
+                                        <img src="Imatges\Falcó pelegrí (Falco peregrinus).jpg" alt="Falcó pelegrí" class="especie-imatge">
+                                        <img src="Imatges\FalcóPelegríVol.jpg" alt="Falcó pelegrí" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Xoriguer comú (Falco tinnunculus)</h4>
+                                        <p>Un falcó petit conegut per la seva capacitat per quedar-se immòbil a l'aire mentre busca preses petites com insectes o petits mamífers.</p>
+                                        <img src="Imatges\Xoriguer comú (Falco tinnunculus).jpg" alt="Xoriguer comú" class="especie-imatge">
+                                        <img src="Imatges\XoriguerComúVol.jpg" alt="Xoriguer comú Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Xoriguer petit (Falco naumanni)</h4>
+                                        <p>Molt similar al xoriguer comú, però més petit i amb una preferència per les zones obertes i semiàrides.</p>
+                                        <img src="Imatges\Xoriguer petit (Falco naumanni).jpg alt="Xoriguer petit" class="especie-imatge">
+                                        <img src="Imatges\XoriguerPetitVol.jpg" alt="Xoriguer petit Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Esmerla (Falco columbarius)</h4>
+                                        <p> Un falcó de mida petita, conegut per la seva habilitat per caçar ocells petits.</p>
+                                        <img src="Imatges\Esmerla (Falco columbarius).jpg" alt="Esmerla" class="especie-imatge">
+                                        <img src="Imatges\EsmerlaVol.jpg" alt="Esmerla" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Falcó cama-roig (Falco vespertinus)</h4>
+                                        <p>Un falcó de mida mitjana que caça petits ocells, sovint caçant en grups.</p>
+                                        <img src="Imatges\Falcó cama-roig (Falco vespertinus).jpg" alt="Falcó cama-roig " class="especie-imatge">
+                                        <img src="Imatges\FalcóCama-roigVol.jpg" alt="Falcó cama-roig Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article id="strigiformes">
+                    <h3>Strigiformes</h3>
+                    <p>Els strigiformes inclouen mussols i ducs. Són caçadors nocturns amb una oïda excepcional i vol silenciós.</p>
+                    <button onclick="toggleInfo('strigiformesInfo', this)">Veure més</button>
+                    <div id="strigiformesInfo" style="display: none;">
+                        <ul>
+                            <li><strong>Família: Strigidae</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Mussol comú (Athene noctua)</h4>
+                                        <p>Un mussol petit que sovint habita en àrees agrícoles o zones humanes. Es caracteritza per la seva capacitat per caçar insectes i petits rosegadors.</p>
+                                        <img src="Imatges\Mussol comú (Athene noctua).jpg" alt="Mussol comú" class="especie-imatge">
+                                        <img src="Imatges\MussolComúVol.jpg" alt="Mussol comú Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Duc (Bubo bubo)</h4>
+                                        <p>El mussol més gran d'Europa, reconegut per les seves grans orelles i el seu crit potent. Caça mamífers grans i ocells.</p>
+                                        <img src="Imatges\Duc (Bubo bubo).jpg" alt="Duc" class="especie-imatge">
+                                        <img src="Imatges\DucVol.jpg" alt="Duc Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Gamarús (Strix aluco)</h4>
+                                        <p>Un mussol de mida mitjana amb un cridar característic. Sol viure a boscos i caçar petits mamífers i ocells.
+                                        </p>
+                                        <img src="Imatges\Gamarús (Strix aluco).jpg" alt="Gamarús" class="especie-imatge">
+                                        <img src="Imatges\GamarúsVol.jpg" alt="Gamarús" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Xot (Otus scops)</h4>
+                                        <p>Un mussol petit i nocturn, molt abundant a zones mediterrànies. Caça insectes i altres petits invertebrats.</p>
+                                        <img src="Imatges\Xot (Otus scops).jpg" alt="Xot" class="especie-imatge">
+                                        <img src="Imatges\XotVol.jpg" alt="Xot Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Mussol banyut (Asio otus)</h4>
+                                        <p>Un mussol de mida gran, amb grans aurícules, que caça petites preses, especialment rosegadors..</p>
+                                        <img src="Imatges\Mussol banyut (Asio otus).jpg" alt="Mussol banyut" class="especie-imatge">
+                                        <img src="Imatges\MussolBanyutVol.jpg" alt="Mussol banyut Vol" class="especie-imatge">
+                                    </li>
+                                    <li>
+                                        <h4>Mussol emigrant (Asio flammeus)</h4>
+                                        <p> Es caracteritza per la seva capacitat de viatjar grans distàncies. Caça principalment de nit, a camps oberts.</p>
+                                        <img src="Imatges\Mussol emigrant (Asio flammeus).jpg" alt="Mussol emigrant" class="especie-imatge">
+                                        <img src="Imatges\MussoEmigrantVol.jpg" alt="Mussol emigrant Vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Família: Tytonidae</strong>
+                                <ul>
+                                    <li>
+                                        <h4>Òliba comuna (Tyto alba)</h4>
+                                        <p>Un mussol de forma triangular, reconegut pel seu rostre en forma de cor. Es pot trobar en zones rurals i urbanes, on caça rosegadors i petits ocells.</p>
+                                        <img src="Imatges\Òliba comuna (Tyto alba).jpg" alt="Òliba comuna" class="especie-imatge">
+                                        <img src="Imatges\ÒlibaComunaVol.jpg" alt="Òliba Comuna vol" class="especie-imatge">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="imatges">
+                <img src="Imatges\xoriguer petit.jpg" alt="Petit xoriguer en vol" >
+                <img src="Imatges\galeria1.jpg" alt="galeria1" >
+                <img src="Imatges\galeria2.jpg" alt="galeria2" >
+                <img src="Imatges\galeria3.jpg" alt="galeria3" >
+                <img src="Imatges\galeria4.jpg" alt="galeria4" >
+                <img src="Imatges\galeria5.jpeg" alt="galeria5" >
+                <img src="Imatges\galeria6.webp" alt="galeria6" >
+                <img src="Imatges\galeria7.jpg" alt="galeria7" >
+            </div>
+        </section>
+
+        <section id="enllacos">
+            <h2>Enllaços d’interès</h2>
+            <ul>
+                <li><a href="https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/fauna-autoctona-protegida/centres-fauna-salvatge-animals-ferits/index.html" target="_blank">Conservació de fauna</a></li>
+                <li><a href="https://parcsnaturals.gencat.cat/ca/inici/index.html" target="_blank">Espais naturals de Catalunya</a></li>
+                <li><a href="https://www.birdingcatalunya.com/p/ocells-de-catalunya.html" target="_blank">Guies de camp d’aus rapinyaires</a></li>
+            </ul>
+            <img src="Imatges/giphy.gif" alt="Gif animat" class="animated-gif">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Creat per Ferran Villà Alsina. Contacte: <a href="mailto:ferranvilla04@gmail.com">ferranvilla04@gmail.com</a></p>
+    </footer>
+</body>
+</html>
